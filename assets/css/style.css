@@ -1,0 +1,74 @@
+/* website color palette */
+:root {
+ --dark: #2D0A2F;
+ --gray: #747474;
+ --bright: #DC5445;
+ --purple: #7A45A8;
+ --light: #EEEDE7;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--dark);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--purple);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--light);
+    margin: 0;
+    display: inline;
+
+}
+
+header nav {
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 20px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--light);
+}
+
+a:hover{
+    color:var(--bright);
+}
+
+a:visited {
+    color:var(--bright);
+}
+footer {
+    background-color: var(--bright);
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url("../images/sunset.jpg");
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    color: var(--light);
+}
