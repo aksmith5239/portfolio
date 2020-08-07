@@ -37,20 +37,28 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display:inline;
+header nav ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
 }
 
 header nav ul li a {
-    margin: 0 20px;
-    font-weight: lighter;
-    font-size: 22px;
-    /* text-decoration: none; */
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.55vw;
     color: var(--light);
+    text-decoration: none;
+    border-bottom: 3px solid var(--light);
+    padding-bottom: 5px;
 }
 
 a:hover{
     color:var(--bright);
+    border-bottom: 3px solid var(--bright);
+    padding-bottom: 5px;
 }
 
 a:visited {
