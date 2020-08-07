@@ -136,6 +136,14 @@ footer {
 
 
 /* work section styles */
+.work-grid-container {
+    max-width: 940px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 100px);
+      grid-gap: 10px;
+}
 .work-item1 img {
     opacity: 0.5;
 }
