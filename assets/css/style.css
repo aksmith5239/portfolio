@@ -16,6 +16,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header styles */
 header {
     padding: 20px 35px;
     background-color: var(--dark);
@@ -66,12 +67,18 @@ a:visited {
 }
 footer {
     background-color: var(--bright);
+    text-align: center;
+    font-weight: lighter;
+    padding: 5px;
 }
 
+/* hero styles */
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap:wrap;
     padding: 20px;
     background-image: url("../images/sunset.jpg");
     height: 150px;
@@ -81,4 +88,113 @@ footer {
 
 .hero h2 {
     color: var(--light);
+    background-color: var(--purple);
+    padding:10px;
 }
+
+/* about section styles */
+.about {
+    display: flex;
+}
+.about-me{
+    margin: 50px auto; 
+    padding-bottom: 50px;
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me h2, .my-work h2{
+    flex: 1 30%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--bright);
+}
+
+.bio {
+    display:flex;
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.bio-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.bio-pic img {
+    flex: 1 12%;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--purple);
+}
+
+
+/* work section styles */
+
+/* contact section styles */
+
+.contact {
+    display: flex;
+}
+.contact-me{
+    margin: 50px auto; 
+    padding-bottom: 50px;
+    width: 80%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-me h2 {
+    flex: 1 30%;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--bright);
+}
+
+.contact-info {
+    display:flex;
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact-list {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--dark);
+}
+
+.contact-list ul {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
+    
+}
+
+.contact-list ul li {
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    color: var(--dark);
+    border-bottom: 3px solid var(--dark);
+    padding-bottom: 5px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+
+ 
+ 

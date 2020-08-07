@@ -20,63 +20,85 @@
             </nav>
         </header>
         <section class="hero">
-            <h2>Developing Code and Great Customer Service</h2>
-        </section>
-        <section class="main-content">
-            <!-- Flexbox Style -->
-            <div class="about-me">
-                <!-- current bio photo -->
-                <h2>About Me</h2>
-                <img src="./assets/images/AKS-headshot.jpg" alt="allison smith headshot"/>
-                <!-- current bio paragraph -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <!-- put this h2 in a div to be able to position within the hero parent section -->
+                <h2>Developing Code and Great Customer Service</h2>
             </div>
-            <!-- begin CSS Grid -->
-            <div class="my-work">
-                <h2>Work</h2>
+        </section>
+        <!-- end hero section -->
+        <!-- begin about section -->
+        <section class="about" id="about-me">
+            <!-- Flexbox Style -->
+        <div class="about-me" >
+                <h2>About Me</h2>
+            <div class="bio">
+                <div class="bio-pic">
+                <!-- current bio photo -->
+                        <img src="./assets/images/AKS-headshot.jpg" alt="allison smith headshot" />
+                </div> <!--end bio-pic--> 
+                <!-- current bio paragraph -->
+                <div class="bio-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div> <!--end bio-text-->
+            </div> <!--end bio-->
+        </div> <!--end about me-->
+        </section>
+        <!-- end about section -->
+
+        <!-- begin CSS Grid -->
+        <section class="my-work" id="my-work">
+            <h2>Work</h2>
                 <div class="work-item1">
                     <img src="./assets/images/rrcr-screenshot.png" alt="roadrunner capitol reports homepage" />
-                    <a href="https://roadrunnercapitol.com"><h2>Roadrunner Capitol Reports</h2></a>
-                    <h3>HTML/CSS/PHP/JavaScript</h3>
+                    <a href="https://roadrunnercapitol.com"><h3>Roadrunner Capitol Reports</h3></a>
+                    <h4>HTML/CSS/PHP/JavaScript</h4>
                 </div>
             </div>
             <div class="work-item2">
                 <img src="./assets/images/run-buddy-screenshot.png" alt="run buddy homepage" />
-                <a href="#"><h2>Run Buddy</h2></a>
-                <h3>HTML, CSS</h3>
+                <a href="#"><h3>Run Buddy</h3></a>
+                <h4>HTML, CSS</h4>
             </div>
             <div class="work-item3">
                 <!-- placeholder for upcoming work -->
                 <img src="./assets/images/LC-sunset.jpg" alt="las cruces nm sunset image" />
-                <a href="#"></a><h2>New Mexico By-Ways</h2></a>
-                <h3>MERN Stack</h3>
+                <a href="#"></a><h3>New Mexico By-Ways</h3></a>
+                <h4>MERN Stack</h4>
             </div>
             <div class="work-item4"><!-- placeholder for upcoming work -->
                 <img src="./assets/images/bikes.jpeg" alt="run buddy homepage" />
-                <a href="#"></a><h2>Ride A Bike</h2></a>
-                <h3>Node/IoT</h3>
+                <a href="#"></a><h3>Ride A Bike</h4></a>
+                <h4>Node/IoT</h4>
                 
             </div>
             <div class="work-item5"><!-- placeholder for upcoming work -->
                 <img src="./assets/images/white-sands-sun-clouds.jpg" alt="white sands national park image" />
-                <a href="#"></a><h2>National Park Report</h2></a>
-                <h3>React/JavaScript/CSS</h3>
+                <a href="#"></a><h3>National Park Report</h3></a>
+                <h4>React/JavaScript/CSS</h4>
             </div>
+        </section> 
             <!-- End CSS Grid -->
             <!-- Flexbox style -->
+         <section class="contact" id="contact-me">
             <div class="contact-me">
                 <h2>Contact</h2>
+            <div class="contact-info">
+                
+                <!-- current bio paragraph -->
+                <div class="contact-list">
                 <ul>
                     <li>575.644.4609</li>
-                    <li>email</li>
-                    <li>GitHub</li>
-                    <li>Linked In</li>
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">Git Hub</a></li>
+                    <li><a href="#">Linked In</a></li>
                 </ul>
-            </div>
-
-        </section>
+                </div> <!--end bio-text-->
+            </div> <!--end bio-->
+        </div> <!--end about me-->
+        </section> 
+      
     </body>
     <footer>
-        <h3>Made with &#x1F499; by Allison K. Smith</h3>
+        <h3>Created by Allison K. Smith</h3>
     </footer>
 </html>
