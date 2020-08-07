@@ -18,7 +18,7 @@ body {
 
 header {
     padding: 20px 35px;
-    background-color: var(--purple);
+    background-color: var(--dark);
 }
 
 header h1 {
