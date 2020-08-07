@@ -136,7 +136,13 @@ footer {
 
 
 /* work section styles */
+.work-item1 img {
+    opacity: 0.5;
+}
 
+.work-item2 {
+    
+}
 /* contact section styles */
 
 .contact {
