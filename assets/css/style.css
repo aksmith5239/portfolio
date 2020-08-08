@@ -146,7 +146,7 @@ footer {
 }
 
 .grid-item.contact {
-    grid-row: 10/ span 2
+    grid-row: 9/ span 2
 }
 
 .grid-head {
@@ -164,38 +164,48 @@ footer {
 }
 
 .main-item.work {
-    grid-column: 2/ span 2;
-    grid-row: 3/ span 5;
-    background-color: aqua;
-    border: 1px solid red;
+    grid-column: 2/ span 3;
+    grid-row: 3/ span 4;
+    background-image: url("../images/rrcr-screenshot.png");
+    background-size: cover;
+    border: 3px solid lavender;
 }
 
+.item-title {
+    background-color: var(--bright);
+    color: var(--light);
+    
+}
 .item-two {
-    grid-column: 4/ span 1;
-    grid-row: 3/ span 3;
-    background-color: aqua;
-    border: 1px solid red;
+    grid-column: 5/ span 1;
+    grid-row: 3/ span 2;
+    background-image: url("../images/bikes.jpeg");
+    background-size: cover;
+    border: 3px solid lavender;
 }
 
 .item-three {
-    grid-column: 4/ span 1;
-    grid-row: 5/ span 3;
-    background-color: aqua;
-    border: 1px solid red;
+    grid-column: 5/ span 1;
+    grid-row: 5/ span 2;
+    background-image: url("../images/LC-sunset.jpg");
+    background-size: cover;
+    border: 3px solid lavender;
 }
 
 .item-four {
     grid-column: 2/ span 1;
-    grid-row: 8/ span 2;
-    background-color: aqua;
-    border: 1px solid red;
+    grid-row: 7/ span 2;
+    background-image: url("../images/run-buddy-screenshot.png");
+    background-size: cover;
+    border: 3px solid lavender;
 }
 
 .item-five {
     grid-column: 3/ span 1;
-    grid-row: 8/ span 2;
-    background-color: aqua;
-    border: 1px solid red;
+    grid-row: 7/ span 2;
+    background-image: url("../images/white-sands-sun-clouds.jpg");
+    background-size: cover;
+    border: 3px solid lavender;
 }
 
 .grid-list.contact {
@@ -233,89 +243,4 @@ footer {
     border-bottom: 3px solid var(--bright);
     padding-bottom: 5px;
     
-}
-
-/* work grid */
-/* this grid needs 3 columns and 3 rows */
-.work {
-
-}
-.work-grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
-}
-
-.work-item.heading {
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--bright);
-    border-right: 3px solid var(--bright);
-    padding-left: 20px;
-    margin-left: 20px;
-    justify-content: flex-end;
-    align-content: flex-end;
-    grid-row: 1/ span 3;
-}
-
-.work-item {
-    border: 2px solid var(--bright);
-    background-color: lavender;
-}
-
-.work-item.one {
-    grid-column: 2/ 4;
-    grid-row: 1/ 5;
-}
-
-.work-item.two {
-
-}
-
-.work-item img {
-    
-    
-}
-/*contact grid */
-/* this grid needs 2 columns and one row */
-.contact {
-
-}
-
-.contact-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px;
-    padding: 20px;
-}
-.contact-item {
-    justify-content: flex-end;
-}
-
-.contact-item.heading {
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--bright);
-    border-right: 3px solid var(--bright);
-    padding-left: 20px;
-    margin-left: 20px;
-    justify-content: flex-end;
-    align-content: flex-end;
-    
-}
-
-.contact-item ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-
-
-.contact-item.list {
-   grid-column: 2 ;
 }
