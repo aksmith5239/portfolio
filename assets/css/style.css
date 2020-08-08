@@ -32,8 +32,6 @@ header h1 {
     font-size: 30px;
     color: var(--light);
     margin: 0;
-    
-
 }
 
 header nav {
@@ -181,15 +179,23 @@ footer {
     opacity: .75;
 }
 
-.item-title {
+.item-title{
     background-color: var(--dark);
     color: var(--light);
     padding: 10px;
+   
+    
 }
-
+.grid-item > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    
+}
 .grid-item a {
     text-decoration: none;
     color: var(--light);
+    
 }
 
 .grid-item a:hover {
@@ -197,6 +203,11 @@ footer {
     color: var(--gold);
 }
 
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    display:block;
+}
 .item-two {
     grid-column: 6/ span 2;
     grid-row: 3/ span 2;
@@ -239,7 +250,7 @@ footer {
 }
 
 .grid-list.contact {
-    grid-column: 2/ span 4;
+    grid-column: 2/ span 7;
     justify-content: center;
 }
 
@@ -247,7 +258,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;   
 }
 
@@ -274,9 +284,70 @@ footer {
     padding-bottom: 5px;
     
 }
+/* @media styles */
+@media screen and (max-width: 980px) {
+ header {
+     padding-bottom: 0;
+     justify-content: center;
+ }
+ header h1 {
+     width: 100%;
+     text-align: center;
+ }
+ header nav ul {
+     margin-top: 20px;
+     width: 100%;
+     justify-content: center;
+ }
 
-.work img {
-    display: block;
-    height: 100%;
-    width: 100%;
+ header nav ul li a {
+     font-size: 20px;
+ }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .image.about {
+        display: none;
+    }
+    .grid-head.about, .grid-head.work, .grid-head.contact {
+        border-left: none;
+        border-right:none;
+        border-bottom: 3px solid var(--bright);
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul li a {
+        font-size: 25px;
+        
+    }
+    header nav li {
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+       
+    }
+    .contact ul li {
+        flex-basis: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .contact ul li a{
+        font-size: 20px;
+    }
+    
+
+
 }
