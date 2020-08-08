@@ -200,9 +200,39 @@ footer {
 
 .grid-list.contact {
     grid-column: 2/ span 4;
+    justify-content: center;
+}
+
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: pink;
-    border: 1px solid blue;
+    align-items: center;
+    list-style: none;   
+}
+
+
+.contact ul li a {
+    margin: 0 30px;
+    font-weight: bold;
+    font-size: 1.55vw;
+    color: var(--dark);
+    border-bottom: 3px solid var(--dark);
+    padding-bottom: 5px;
+    
+    
+}
+.contact ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    
+}
+
+.contact ul li a:hover{
+    color:var(--bright);
+    border-bottom: 3px solid var(--bright);
+    padding-bottom: 5px;
+    
 }
 
 /* work grid */
@@ -285,27 +315,6 @@ footer {
     list-style: none;
 }
 
-.contact-item ul li a {
-    margin: 0 30px;
-    font-weight: bold;
-    font-size: 1.55vw;
-    color: var(--dark);
-    border-bottom: 3px solid var(--dark);
-    padding-bottom: 5px;
-    
-}
-.contact-item ul li a {
-    text-decoration: none;
-    color: var(--dark);
-    
-}
-
-.contact-item ul li a:hover{
-    color:var(--bright);
-    border-bottom: 3px solid var(--bright);
-    padding-bottom: 5px;
-    
-}
 
 .contact-item.list {
    grid-column: 2 ;
