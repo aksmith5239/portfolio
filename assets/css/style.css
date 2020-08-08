@@ -103,26 +103,28 @@ footer {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 2fr repeat(4, 2fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1fr repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     grid-gap: 10px;
     width: 90%;
     font-size: 1.2rem;
-    grid-auto-flow: column;
-    /* padding: 20px; */
+    /* grid-auto-flow: column; */
+    padding: 20px;
 }
 
 .grid-item {
     padding: 15px 0;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: flex-start;
     text-align: right;
+    margin-bottom: 10px;
 }
 
 .grid-item.about {
     grid-row: 1/ span 2;
-    
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .grid-item.image {
@@ -135,7 +137,7 @@ footer {
 }
 
 .grid-text.about {
-    grid-column: 3/ span 4;
+    grid-column: 3/ span 5;
     
 }
 
@@ -145,26 +147,31 @@ footer {
     text-align: left;
 }
 
-.grid-item.contact {
-    grid-row: 9/ span 2
-}
-
 .grid-head {
     font-size: 30px;
     font-weight: bolder;
     color: var(--bright);
     border-right: 3px solid var(--bright);
-    padding-right: 10px;
+    padding-right:10px;
+    text-align: right;
 }
-
+.grid-head.about {
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+    
+}
 .grid-head.work {
     grid-column: 1;
-    grid-row: 3/ span 1;
+    grid-row: 3/ span 6;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
     
 }
 
 .main-item.work {
-    grid-column: 2/ span 3;
+    grid-column: 2/ span 4;
     grid-row: 3/ span 4;
     background-image: url("../images/rrcr-screenshot.png");
     background-size: cover;
@@ -175,9 +182,10 @@ footer {
     background-color: var(--bright);
     color: var(--light);
     
+    
 }
 .item-two {
-    grid-column: 5/ span 1;
+    grid-column: 6/ span 2;
     grid-row: 3/ span 2;
     background-image: url("../images/bikes.jpeg");
     background-size: cover;
@@ -185,7 +193,7 @@ footer {
 }
 
 .item-three {
-    grid-column: 5/ span 1;
+    grid-column: 6/ span 2;
     grid-row: 5/ span 2;
     background-image: url("../images/LC-sunset.jpg");
     background-size: cover;
@@ -193,7 +201,7 @@ footer {
 }
 
 .item-four {
-    grid-column: 2/ span 1;
+    grid-column: 2/ span 2;
     grid-row: 7/ span 2;
     background-image: url("../images/run-buddy-screenshot.png");
     background-size: cover;
@@ -201,11 +209,16 @@ footer {
 }
 
 .item-five {
-    grid-column: 3/ span 1;
+    grid-column: 4/ span 2;
     grid-row: 7/ span 2;
     background-image: url("../images/white-sands-sun-clouds.jpg");
     background-size: cover;
     border: 3px solid lavender;
+}
+
+
+.grid-item.contact {
+    grid-row: 9/ span 1
 }
 
 .grid-list.contact {
@@ -244,3 +257,4 @@ footer {
     padding-bottom: 5px;
     
 }
+
