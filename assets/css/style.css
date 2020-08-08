@@ -4,6 +4,8 @@
  --gray: #747474;
  --bright: #DC5445;
  --purple: #7A45A8;
+ --rose: #b5858a;
+ --gold: #d8942a;
  --light: #EEEDE7;
 }
 * {
@@ -62,9 +64,9 @@ a:hover{
     padding-bottom: 5px;
 }
 
-a:visited {
+/* header a:visited {
     color:var(--bright);
-}
+} */
 footer {
     background-color: var(--bright);
     text-align: center;
@@ -173,23 +175,35 @@ footer {
 .main-item.work {
     grid-column: 2/ span 4;
     grid-row: 3/ span 4;
+    border: 3px solid var(--gold);
     background-image: url("../images/rrcr-screenshot.png");
     background-size: cover;
-    border: 3px solid lavender;
+    opacity: .75;
 }
 
 .item-title {
-    background-color: var(--bright);
+    background-color: var(--dark);
     color: var(--light);
-    
-    
+    padding: 10px;
 }
+
+.grid-item a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.grid-item a:hover {
+    text-decoration: none;
+    color: var(--gold);
+}
+
 .item-two {
     grid-column: 6/ span 2;
     grid-row: 3/ span 2;
     background-image: url("../images/bikes.jpeg");
     background-size: cover;
-    border: 3px solid lavender;
+    opacity: .75;
+    border: 3px solid var(--gold);
 }
 
 .item-three {
@@ -197,7 +211,8 @@ footer {
     grid-row: 5/ span 2;
     background-image: url("../images/LC-sunset.jpg");
     background-size: cover;
-    border: 3px solid lavender;
+    opacity: .75;
+    border: 3px solid var(--gold);
 }
 
 .item-four {
@@ -205,7 +220,8 @@ footer {
     grid-row: 7/ span 2;
     background-image: url("../images/run-buddy-screenshot.png");
     background-size: cover;
-    border: 3px solid lavender;
+    opacity: .75;
+    border: 3px solid var(--gold);
 }
 
 .item-five {
@@ -213,7 +229,8 @@ footer {
     grid-row: 7/ span 2;
     background-image: url("../images/white-sands-sun-clouds.jpg");
     background-size: cover;
-    border: 3px solid lavender;
+    opacity: .75;
+    border: 3px solid var(--gold);
 }
 
 
@@ -258,3 +275,8 @@ footer {
     
 }
 
+.work img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
