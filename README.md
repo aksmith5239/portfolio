@@ -7,7 +7,7 @@ My portfolio of work relating to coding
 * The resume is a placeholder link at this time. 
 
 ## Hero 
-* The hero section includes a photo of the New Mexico Sunset <img srs="./assets/images/sunset.jpg"> and a cool tag line. 
+* The hero section includes a photo of the New Mexico Sunset <img src="./assets/images/sunset.jpg"> and a cool tag line. 
 
 ## About Me
 * The About Me section tells a little bit about my journey as a developer and includes a current photo: <img src="../assets/images/AKS-headshot.jpg">
