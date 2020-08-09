@@ -1,5 +1,6 @@
 # Portfolio for Allison K. Smith
 My portfolio of work relating to coding
+<a href="http://aksmith5239.github.io/portfolio">Link to My Portfolio</a>
 
 ## Header
 * the Header includes My name and site navigation. 
