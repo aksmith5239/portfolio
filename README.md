@@ -2,7 +2,7 @@
 My portfolio of work relating to coding
 <a href="http://aksmith5239.github.io/portfolio">Link to My Portfolio</a>
 ## Project Screenshot: 
-<img src="assets/images/MyPortfolio.png" height="100" width="100" alt="screenshot of portfolio project"/>
+<img src="assets/images/MyPortfolio.png" height="500" width="300" alt="screenshot of portfolio project"/>
 ## Header
 * the Header includes My name and site navigation. 
 * The About Me, Work and Contact links will take the user down the page to the desired area.
