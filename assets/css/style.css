@@ -248,7 +248,7 @@ footer {
 .item-two {
     grid-column: 6/ span 2;
     grid-row: 3/ span 2;
-    background-image: url("../images/bikes.jpeg");
+    background-image: url("../images/wizier.png");
     background-size: cover;
     border: 3px solid var(--gold);
 }
