@@ -241,7 +241,7 @@ footer {
     grid-column: 2/ span 4;
     grid-row: 3/ span 4;
     border: 3px solid var(--gold);
-    background-image: url("../images/rrcr-screenshot.png");
+    background-image: url("../images/rrcr-ss.png");
     background-size: cover;
 }
 
